@@ -19,7 +19,7 @@ console.log(myObj.func);
 console.log(myObj.func());
 
 
-console.log("*****can i access variables inside function*********");
+console.log("*****can i access variables inside function directly ??*******");
 
 function random() {
   const myRandom = Math.random();
