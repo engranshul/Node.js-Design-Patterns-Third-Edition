@@ -1,3 +1,11 @@
+console.log("******iffe practice*******");
+
+const result = function add(a,b) {
+  return a+b;
+}(1,4);
+console.log(result);
+
+console.log("***************************");
 // immediately invoked function example
 const myModule = (() => {
   const privateFoo = () => {}
