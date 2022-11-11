@@ -18,8 +18,6 @@ const myObj = {
 console.log(myObj.fname);
 console.log(myObj.func);
 console.log(myObj.func());
-
-
 console.log("*****can i access variables inside function directly ??*******");
 
 function random() {

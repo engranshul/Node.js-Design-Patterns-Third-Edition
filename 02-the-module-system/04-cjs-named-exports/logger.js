@@ -7,8 +7,8 @@ exports.verbose = (message) => {
 }
 
 console.log("***********");
-console.log(exports == module.exports);
-console.log(exports === module.exports);
+console.log(exports == module.exports);   // true
+console.log(exports === module.exports);  // true
 
 // named exports : involves assigning the values we want to make
 // public to properties of the object referenced by exports

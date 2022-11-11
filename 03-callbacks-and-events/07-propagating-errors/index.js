@@ -20,6 +20,7 @@ function readJSON (filename, callback) {
   })
 }
 
+
 const cb = (err, data) => {
   if (err) {
     return console.error(err)

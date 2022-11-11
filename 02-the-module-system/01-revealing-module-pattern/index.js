@@ -20,7 +20,7 @@ const myModule = (() => {
 })() // once the parenthesis here are parsed, the function will be invoked
 
 console.log(myModule)
-console.log(myModule.privateFoo, myModule.privateBar)
+console.log(myModule.privateFoo, myModule.privateBar) // not accessible
 
 
 // Most successful JS module systems are : asynchronous module definition(amd)
