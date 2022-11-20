@@ -48,3 +48,11 @@ while(resources.length > 0) {
 // in the same thread,but it is still not efficient.
 // Loop will consume precious CPU for iterating over resources
 // that are unavailable most of the time
+
+// Luckily most OSs provide a native mechanism to handle 
+// concurrent non blocking resources in an efficient way
+// We are talking about synchronous event demultiplexer(event
+// notification interface). Using this we can handle several
+// I/O operations inside a single thread, without using the
+// busy waiting technique.Using this the tasks are spread over
+// time instead of being spread over multiple threads 
