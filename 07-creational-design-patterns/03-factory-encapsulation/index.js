@@ -1,5 +1,6 @@
 function createPerson (name) {
-  const privateProperties = {}
+  // below properties inaccessible from outside
+  const privateProperties = {} 
 
   const person = {
     setName (name) {
@@ -19,4 +20,8 @@ function createPerson (name) {
 
 const person = createPerson('James Joyce')
 
-console.log(person.getName(), person)
+console.log(person);
+
+console.log(person.getName())
+
+console.log(person.privateProperties); // gives undefined

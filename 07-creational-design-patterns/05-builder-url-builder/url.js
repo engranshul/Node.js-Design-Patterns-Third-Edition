@@ -9,7 +9,7 @@ export class Url {
     this.pathname = pathname
     this.search = search
     this.hash = hash
-
+    // concept of calling validate from constructor
     this.validate()
   }
 

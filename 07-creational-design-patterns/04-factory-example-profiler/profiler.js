@@ -20,6 +20,9 @@ const noopProfiler = {
   end () {}
 }
 
+// createProfiler() function is our factory and its role
+// is abstracting the creation of a Profiler object from its
+// implementation
 export function createProfiler (label) {
   if (process.env.NODE_ENV === 'production') {
     return noopProfiler
