@@ -4,6 +4,8 @@ import { db } from './db.js'
 const dbRun = promisify(db.run.bind(db))
 const dbAll = promisify(db.all.bind(db))
 
+// see how this class is directly importing db.js
+// can db.js be a part of its constructor ??
 export class Blog {
   initialize () {
     const initQuery = `CREATE TABLE IF NOT EXISTS posts (

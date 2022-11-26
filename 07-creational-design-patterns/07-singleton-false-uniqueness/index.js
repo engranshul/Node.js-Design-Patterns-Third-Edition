@@ -1,3 +1,5 @@
+// see how below 2 imports are directly referencing node-modules
+// folders
 import { getDbInstance as getDbFromA } from 'package-a'
 import { getDbInstance as getDbFromB } from 'package-b'
 

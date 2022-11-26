@@ -1,6 +1,7 @@
 import { promisify } from 'util'
 
 export class Blog {
+  // constructor injection
   constructor (db) {
     this.db = db
     this.dbRun = promisify(db.run.bind(db))

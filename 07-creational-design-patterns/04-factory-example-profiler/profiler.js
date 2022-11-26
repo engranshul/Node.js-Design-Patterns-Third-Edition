@@ -23,6 +23,10 @@ const noopProfiler = {
 // createProfiler() function is our factory and its role
 // is abstracting the creation of a Profiler object from its
 // implementation
+
+// See how in below createProfiler() function, we are
+// returning a class one time and returning a object
+// one time depending on environment.
 export function createProfiler (label) {
   if (process.env.NODE_ENV === 'production') {
     return noopProfiler
